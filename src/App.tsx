@@ -338,7 +338,7 @@ export default function App() {
                       animate={{ opacity: 1, scale: 1, y: 0 }}
                       exit={{ opacity: 0, scale: 0.95, y: -10 }}
                       transition={{ duration: 0.4, ease: "easeOut" }}
-                      className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-white uppercase"
+                      className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-[#4A90E2] uppercase"
                     >
                       Evolución
                     </motion.h2>
@@ -455,12 +455,14 @@ export default function App() {
                     {/* Reset / Restart */}
                     <button
                       onClick={handleRestart}
-                      className="flex items-center gap-2 px-6 py-3 bg-[#E9C126] hover:bg-[#d8b022] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full transition-all active:scale-95 shadow-lg shadow-[#E9C126]/15"
+                      className="flex items-center gap-2 px-6 py-3 bg-[#E9C126] hover:bg-[#d8b022] text-slate-950 text-xs font-bold uppercase tracking-widest rounded-full transition-all active:scale-95 shadow-lg shadow-[#E9C126]/15 cursor-pointer"
                       id="btn-restart"
                     >
                       <RotateCcw className="w-4 h-4" />
                       <span>Volver a componer</span>
                     </button>
+
+
                   </div>
                 </div>
               </div>
