@@ -1,0 +1,6 @@
+{
+  "name": "Invitación Interactiva - Componer el Futuro",
+  "description": "Una invitación corporativa interactiva que utiliza la metáfora de un piano para representar la composición del futuro, guiando al usuario a través de una experiencia narrativa sonora y visual.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
