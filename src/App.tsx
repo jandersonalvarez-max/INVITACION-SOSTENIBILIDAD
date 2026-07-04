@@ -136,11 +136,11 @@ export default function App() {
             // Custom colors when illuminated
             if (isKeyActive) {
               if (key.id === 'DO') keyColorClasses = 'bg-white text-slate-900 border-white shadow-lg key-glow-active';
-              if (key.id === 'RE') keyColorClasses = 'bg-[#4A90E2] text-white border-[#4A90E2]/80 shadow-lg key-glow-active';
-              if (key.id === 'MI') keyColorClasses = 'bg-[#aadee9] text-slate-950 border-[#aadee9]/80 shadow-lg key-glow-active';
-              if (key.id === 'FA') keyColorClasses = 'bg-[#006ea5] text-white border-[#006ea5]/80 shadow-lg key-glow-active';
-              if (key.id === 'SOL') keyColorClasses = 'bg-[#E9C126] text-slate-950 border-[#E9C126]/80 shadow-lg key-glow-active';
-              if (key.id === 'LA') keyColorClasses = 'bg-[#f7931e] text-white border-[#f7931e]/80 shadow-lg key-glow-active';
+              if (key.id === 'RE') keyColorClasses = 'bg-[#006ea5] text-white border-[#006ea5]/80 shadow-lg key-glow-active';
+              if (key.id === 'MI') keyColorClasses = 'bg-[#50ade2] text-white border-[#50ade2]/80 shadow-lg key-glow-active';
+              if (key.id === 'FA') keyColorClasses = 'bg-[#f6b102] text-slate-950 border-[#f6b102]/80 shadow-lg key-glow-active';
+              if (key.id === 'SOL') keyColorClasses = 'bg-[#aadee9] text-slate-950 border-[#aadee9]/80 shadow-lg key-glow-active';
+              if (key.id === 'LA') keyColorClasses = 'bg-[#4A90E2] text-white border-[#4A90E2]/80 shadow-lg key-glow-active';
               if (key.id === 'SI') keyColorClasses = 'bg-[#00b7ed] text-slate-950 border-[#00b7ed]/80 shadow-lg key-glow-active';
             }
 
@@ -231,9 +231,9 @@ export default function App() {
           </div>
           <div className="h-[2px] w-full bg-white/5 rounded-full overflow-hidden flex gap-1">
             <div className={`h-full flex-1 rounded-full transition-all duration-500 ${currentStep >= 2 ? 'bg-white' : 'bg-white/5'}`} />
-            <div className={`h-full flex-1 rounded-full transition-all duration-500 ${currentStep >= 3 ? 'bg-[#4A90E2]' : 'bg-white/5'}`} />
-            <div className={`h-full flex-1 rounded-full transition-all duration-500 ${currentStep >= 4 ? 'bg-[#aadee9]' : 'bg-white/5'}`} />
-            <div className={`h-full flex-1 rounded-full transition-all duration-500 ${currentStep >= 5 ? 'bg-[#006ea5]' : 'bg-white/5'}`} />
+            <div className={`h-full flex-1 rounded-full transition-all duration-500 ${currentStep >= 3 ? 'bg-[#006ea5]' : 'bg-white/5'}`} />
+            <div className={`h-full flex-1 rounded-full transition-all duration-500 ${currentStep >= 4 ? 'bg-[#50ade2]' : 'bg-white/5'}`} />
+            <div className={`h-full flex-1 rounded-full transition-all duration-500 ${currentStep >= 5 ? 'bg-[#f6b102]' : 'bg-white/5'}`} />
             <div className={`h-full flex-1 rounded-full transition-all duration-500 ${currentStep >= 6 ? 'bg-[#E9C126]' : 'bg-white/5'}`} />
           </div>
         </div>
@@ -282,9 +282,9 @@ export default function App() {
                 {/* Abstract key stripes representation */}
                 <div className="w-full flex items-end gap-1.5 h-10 px-6 opacity-40 group-hover:opacity-75 transition-opacity">
                   <div className="flex-1 h-full bg-white rounded-t" />
-                  <div className="flex-1 h-3/4 bg-[#4A90E2] rounded-t" />
-                  <div className="flex-1 h-2/3 bg-[#aadee9] rounded-t" />
-                  <div className="flex-1 h-4/5 bg-[#1D4A66] rounded-t" />
+                  <div className="flex-1 h-3/4 bg-[#006ea5] rounded-t" />
+                  <div className="flex-1 h-2/3 bg-[#50ade2] rounded-t" />
+                  <div className="flex-1 h-4/5 bg-[#f6b102] rounded-t" />
                 </div>
               </div>
             </motion.div>
@@ -338,7 +338,7 @@ export default function App() {
                       animate={{ opacity: 1, scale: 1, y: 0 }}
                       exit={{ opacity: 0, scale: 0.95, y: -10 }}
                       transition={{ duration: 0.4, ease: "easeOut" }}
-                      className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-[#4A90E2] uppercase"
+                      className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-[#006ea5] uppercase"
                     >
                       Evolución
                     </motion.h2>
@@ -368,7 +368,7 @@ export default function App() {
                       animate={{ opacity: 1, scale: 1, y: 0 }}
                       exit={{ opacity: 0, scale: 0.95, y: -10 }}
                       transition={{ duration: 0.4, ease: "easeOut" }}
-                      className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-[#aadee9] uppercase"
+                      className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-[#50ade2] uppercase"
                     >
                       Sustentabilidad
                     </motion.h2>
@@ -398,7 +398,7 @@ export default function App() {
                       animate={{ opacity: 1, scale: 1, y: 0 }}
                       exit={{ opacity: 0, scale: 0.95, y: -10 }}
                       transition={{ duration: 0.4, ease: "easeOut" }}
-                      className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-[#006ea5] uppercase"
+                      className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-[#f6b102] uppercase"
                     >
                       Entorno
                     </motion.h2>
@@ -437,13 +437,13 @@ export default function App() {
                     <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 font-mono text-xs text-white uppercase tracking-wider">
                       ★ Impulsemos
                     </span>
-                    <span className="px-3 py-1 rounded-full bg-[#4A90E2]/10 border border-[#4A90E2]/20 font-mono text-xs text-[#4A90E2] uppercase tracking-wider">
+                    <span className="px-3 py-1 rounded-full bg-[#006ea5]/10 border border-[#006ea5]/20 font-mono text-xs text-[#006ea5] uppercase tracking-wider">
                       ★ Evolución
                     </span>
-                    <span className="px-3 py-1 rounded-full bg-[#aadee9]/10 border border-[#aadee9]/20 font-mono text-xs text-[#aadee9] uppercase tracking-wider">
+                    <span className="px-3 py-1 rounded-full bg-[#50ade2]/10 border border-[#50ade2]/20 font-mono text-xs text-[#50ade2] uppercase tracking-wider">
                       ★ Sustentabilidad
                     </span>
-                    <span className="px-3 py-1 rounded-full bg-[#006ea5]/10 border border-[#006ea5]/20 font-mono text-xs text-[#5DADE2] uppercase tracking-wider">
+                    <span className="px-3 py-1 rounded-full bg-[#f6b102]/10 border border-[#f6b102]/20 font-mono text-xs text-[#f6b102] uppercase tracking-wider">
                       ★ Entorno
                     </span>
                   </div>

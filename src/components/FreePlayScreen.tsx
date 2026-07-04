@@ -64,30 +64,30 @@ export default function FreePlayScreen({ onBack }: FreePlayScreenProps) {
           let glowColor = 'rgba(255, 255, 255, 0.4)';
 
           if (note.id === 'RE') {
-            colBg = 'bg-[#4A90E2]';
-            textCol = 'text-white';
-            borderCol = 'border-white/15';
-            glowColor = 'rgba(74, 144, 226, 0.5)';
-          } else if (note.id === 'MI') {
-            colBg = 'bg-[#aadee9]';
-            textCol = 'text-slate-900';
-            borderCol = 'border-slate-900/15';
-            glowColor = 'rgba(170, 222, 233, 0.5)';
-          } else if (note.id === 'FA') {
             colBg = 'bg-[#006ea5]';
             textCol = 'text-white';
             borderCol = 'border-white/15';
             glowColor = 'rgba(0, 110, 165, 0.5)';
-          } else if (note.id === 'SOL') {
-            colBg = 'bg-[#E9C126]';
-            textCol = 'text-slate-950';
-            borderCol = 'border-slate-950/15';
-            glowColor = 'rgba(233, 193, 38, 0.5)';
-          } else if (note.id === 'LA') {
-            colBg = 'bg-[#f7931e]';
+          } else if (note.id === 'MI') {
+            colBg = 'bg-[#50ade2]';
             textCol = 'text-white';
             borderCol = 'border-white/15';
-            glowColor = 'rgba(247, 147, 30, 0.5)';
+            glowColor = 'rgba(80, 173, 226, 0.5)';
+          } else if (note.id === 'FA') {
+            colBg = 'bg-[#f6b102]';
+            textCol = 'text-slate-950';
+            borderCol = 'border-slate-950/15';
+            glowColor = 'rgba(246, 177, 2, 0.5)';
+          } else if (note.id === 'SOL') {
+            colBg = 'bg-[#aadee9]';
+            textCol = 'text-slate-950';
+            borderCol = 'border-slate-950/15';
+            glowColor = 'rgba(170, 222, 233, 0.5)';
+          } else if (note.id === 'LA') {
+            colBg = 'bg-[#4A90E2]';
+            textCol = 'text-white';
+            borderCol = 'border-white/15';
+            glowColor = 'rgba(74, 144, 226, 0.5)';
           } else if (note.id === 'SI') {
             colBg = 'bg-[#00b7ed]';
             textCol = 'text-slate-950';
