@@ -56,3 +56,18 @@
 .tap-indicator {
   animation: tapPulse 1.8s infinite ease-in-out;
 }
+
+@keyframes subtlePulse {
+  0%, 100% {
+    opacity: 0.95;
+    box-shadow: 0 0 12px rgba(233, 193, 38, 0.2);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(233, 193, 38, 0.45);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: subtlePulse 2s infinite ease-in-out;
+}

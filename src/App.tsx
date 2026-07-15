@@ -213,11 +213,11 @@ export default function App() {
           {/* Skip to Fullscreen Mode (Pantalla 6) */}
           <button
             onClick={() => setMode('free-play')}
-            className="flex items-center gap-1.5 px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/25 rounded-full text-xs font-medium text-white transition-all active:scale-95"
+            className="flex items-center gap-1.5 px-3.5 py-2 bg-[#E9C126]/15 hover:bg-[#E9C126]/25 border border-[#E9C126]/45 hover:border-[#E9C126]/70 rounded-full text-[11px] sm:text-xs font-bold text-[#E9C126] transition-all active:scale-95 shadow-[0_0_12px_rgba(233,193,38,0.2)] animate-pulse-subtle"
             id="btn-trigger-free-play"
           >
             <SlidersHorizontal className="w-3.5 h-3.5 text-[#E9C126]" />
-            <span className="hidden sm:inline">Teclado Completo</span>
+            <span>Teclado Completo</span>
           </button>
         </div>
       </header>
@@ -290,7 +290,7 @@ export default function App() {
             </motion.div>
           )}
 
-          {/* Pantalla 2: IMPULSEMOS (DO) */}
+          {/* Pantalla 2: IMPULSAR (DO) */}
           {currentStep === 2 && (
             <motion.div
               key="step-2"
@@ -310,7 +310,7 @@ export default function App() {
                       transition={{ duration: 0.4, ease: "easeOut" }}
                       className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-white uppercase"
                     >
-                      Impulsemos
+                      IMPULSAR
                     </motion.h2>
                   )}
                 </AnimatePresence>
@@ -320,7 +320,7 @@ export default function App() {
             </motion.div>
           )}
 
-          {/* Pantalla 3: EVOLUCIÓN (RE) */}
+          {/* Pantalla 3: NUESTRA GENTE (RE) */}
           {currentStep === 3 && (
             <motion.div
               key="step-3"
@@ -340,7 +340,7 @@ export default function App() {
                       transition={{ duration: 0.4, ease: "easeOut" }}
                       className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-[#006ea5] uppercase"
                     >
-                      Evolución
+                      NUESTRA GENTE
                     </motion.h2>
                   )}
                 </AnimatePresence>
@@ -350,7 +350,7 @@ export default function App() {
             </motion.div>
           )}
 
-          {/* Pantalla 4: SUSTENTABILIDAD (MI) */}
+          {/* Pantalla 4: AMBIENTE (MI) */}
           {currentStep === 4 && (
             <motion.div
               key="step-4"
@@ -370,7 +370,7 @@ export default function App() {
                       transition={{ duration: 0.4, ease: "easeOut" }}
                       className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-[#50ade2] uppercase"
                     >
-                      Sustentabilidad
+                      AMBIENTE
                     </motion.h2>
                   )}
                 </AnimatePresence>
@@ -380,7 +380,7 @@ export default function App() {
             </motion.div>
           )}
 
-          {/* Pantalla 5: ENTORNO (FA) */}
+          {/* Pantalla 5: BIEN COMÚN (FA) */}
           {currentStep === 5 && (
             <motion.div
               key="step-5"
@@ -400,7 +400,7 @@ export default function App() {
                       transition={{ duration: 0.4, ease: "easeOut" }}
                       className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-[#f6b102] uppercase"
                     >
-                      Entorno
+                      BIEN COMÚN
                     </motion.h2>
                   )}
                 </AnimatePresence>
@@ -433,18 +433,18 @@ export default function App() {
                     </p>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 items-center justify-center pt-3">
-                    <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 font-mono text-xs text-white uppercase tracking-wider">
-                      ★ Impulsemos
+                  <div className="flex flex-col gap-2 items-center justify-center pt-3 w-full max-w-xs mx-auto">
+                    <span className="w-full text-center px-3 py-1.5 rounded-full bg-white/5 border border-white/10 font-mono text-xs text-white uppercase tracking-wider">
+                      ★ IMPULSAR
                     </span>
-                    <span className="px-3 py-1 rounded-full bg-[#006ea5]/10 border border-[#006ea5]/20 font-mono text-xs text-[#006ea5] uppercase tracking-wider">
-                      ★ Evolución
+                    <span className="w-full text-center px-3 py-1.5 rounded-full bg-[#006ea5]/10 border border-[#006ea5]/20 font-mono text-xs text-[#006ea5] uppercase tracking-wider">
+                      ★ EVOLUCIÓN DE NUESTRA GENTE
                     </span>
-                    <span className="px-3 py-1 rounded-full bg-[#50ade2]/10 border border-[#50ade2]/20 font-mono text-xs text-[#50ade2] uppercase tracking-wider">
-                      ★ Sustentabilidad
+                    <span className="w-full text-center px-3 py-1.5 rounded-full bg-[#50ade2]/10 border border-[#50ade2]/20 font-mono text-xs text-[#50ade2] uppercase tracking-wider">
+                      ★ SUSTENTABILIDAD AMBIENTAL
                     </span>
-                    <span className="px-3 py-1 rounded-full bg-[#f6b102]/10 border border-[#f6b102]/20 font-mono text-xs text-[#f6b102] uppercase tracking-wider">
-                      ★ Entorno
+                    <span className="w-full text-center px-3 py-1.5 rounded-full bg-[#f6b102]/10 border border-[#f6b102]/20 font-mono text-xs text-[#f6b102] uppercase tracking-wider">
+                      ★ BIEN COMÚN
                     </span>
                   </div>
                 </div>
