@@ -380,7 +380,7 @@ export default function App() {
             </motion.div>
           )}
 
-          {/* Pantalla 5: BIEN COMÚN (FA) */}
+          {/* Pantalla 5: ENTORNO (FA) */}
           {currentStep === 5 && (
             <motion.div
               key="step-5"
@@ -400,7 +400,7 @@ export default function App() {
                       transition={{ duration: 0.4, ease: "easeOut" }}
                       className="font-display font-bold text-3xl sm:text-4xl tracking-widest text-[#f6b102] uppercase"
                     >
-                      BIEN COMÚN
+                      ENTORNO
                     </motion.h2>
                   )}
                 </AnimatePresence>
